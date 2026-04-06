@@ -12,7 +12,11 @@ def analyze_url_features(url: str) -> tuple[int, list[str]]:
         score += 30
         reasons.append("URL uses an IP address instead of domain")
 
-    keywords = ["login", "verify", "secure", "bank"]
+    keywords = [
+        "login", "verify", "secure", "bank", "update", "confirm",
+        "password", "account", "reset", "alert", "signin", "paypal",
+        "ebay", "apple", "amazon"
+    ]
     for word in keywords:
         if word in url.lower():
             score += 10

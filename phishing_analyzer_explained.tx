@@ -1,0 +1,20 @@
+I developed a Phishing Analyzer API using Python and FastAPI to help SOC teams detect phishing URLs.
+
+Here’s how it works:
+
+URL Analysis: The API checks URLs for red flags like unusually long URLs, IP-based URLs, and suspicious keywords such as ‘login’ or ‘verify’.
+Domain Check: It extracts the domain and calculates its age. Domains younger than 30 days are considered higher risk.
+Threat Intelligence Integration: It integrates with VirusTotal to see if the URL is already reported as malicious or suspicious, adjusting the risk score accordingly.
+Risk Scoring: All factors are combined into a risk score, and the URL is classified as Phishing, Suspicious, or Legitimate.
+SOC-style Logging: Alerts for phishing or suspicious URLs are logged in a SOC-friendly format for monitoring and incident response.
+Response: The API returns a structured JSON with the URL, domain, age, risk score, verdict, reasons, and VirusTotal results.
+
+This project demonstrates my skills in cybersecurity, Python programming, API development, and working with threat intelligence tools. It shows how I can automate threat detection and help security teams respond faster to phishing attacks
+
+
+# Phishing Analyzer API | Python, FastAPI, Threat Intelligence
+
+# Developed a Python API to detect phishing URLs using URL heuristics, domain intelligence, and VirusTotal threat intelligence.
+# Implemented automated scoring system to classify URLs as Phishing, Suspicious, or Legitimate.
+# Integrated domain age checks, suspicious keyword detection, and IP-based URL analysis.
+# Designed SOC-style alerts and structured logging for early threat detection.
